@@ -1,4 +1,4 @@
-python-3.7.2
+python-3.7.9
 flask
 flask-jwt-extended
 flask-restful

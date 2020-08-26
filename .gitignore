@@ -1,0 +1,4 @@
+data.db
+./__*
+__pycache*
+*.pyc

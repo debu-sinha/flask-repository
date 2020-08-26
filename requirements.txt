@@ -1,6 +1,6 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
-# platform: win-64
+
 adwaita-icon-theme=3.36.1=h5728ca3_1
 aniso8601=8.0.0=py_0
 atk-1.0=2.36.0=he1ac64b_1
@@ -115,3 +115,4 @@ yaml=0.2.5=he774522_0
 zeromq=4.3.2=ha925a31_3
 zlib=1.2.11=h62dcd97_1007
 zstd=1.4.5=h1f3a1b7_2
+uwsgi

@@ -10,12 +10,12 @@ from createtable import reset_database
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 api = Api(app)
 
 
-app.config['JWT_SECRET_KEY'] = '<insert your key here or use KMS or any other key store for real production>' 
+app.config['JWT_SECRET_KEY'] = '<testkey>' 
 jwt = JWTManager(app)
 
 api.add_resource(Item,'/item/<string:name>')

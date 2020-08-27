@@ -14,9 +14,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////data.db'
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 api = Api(app)
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
 
 app.config['JWT_SECRET_KEY'] = '<insert your key here or use KMS or any other key store for real production>' 
 jwt = JWTManager(app)
@@ -32,5 +29,5 @@ if __name__ == '__main__':
     from db import db
     db.init_app(app)
     #reset_database()
-    #app.run(port = 5000, debug = True)
-    app.run()
+    app.run(port = 5000, debug = True)
+    

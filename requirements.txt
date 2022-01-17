@@ -3,4 +3,4 @@ flask-jwt-extended
 flask-restful
 flask-sqlalchemy
 uwsgi
-psycopg2
+psycopg2-binary
